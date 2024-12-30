@@ -1,0 +1,143 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/welcomeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="180dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textWel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcomeTextView"
+        android:textSize="18sp"
+        android:text="Shop by categroy"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <GridLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:rowCount="1"
+        android:columnCount="2"
+        android:layout_below="@+id/textWel"
+        android:layout_marginTop="16dp"
+        android:columnOrderPreserved="false">
+
+
+        <LinearLayout
+            android:layout_width="167dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/a"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:padding="4dp"
+                android:src="@drawable/toys" />
+
+
+            <TextView
+                android:id="@+id/b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:padding="4dp"
+                android:text="Toys and games"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:id="@+id/c"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:padding="4dp"
+                android:src="@drawable/feeding" />
+
+
+            <TextView
+                android:id="@+id/d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:padding="4dp"
+                android:text="Pets supplies"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="209dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/aa"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:padding="4dp"
+                android:src="@drawable/kitchen" />
+
+
+            <TextView
+                android:id="@+id/bb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:padding="4dp"
+                android:text="Home and kitchen"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:id="@+id/cc"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:padding="4dp"
+                android:src="@drawable/makeup" />
+
+
+            <TextView
+                android:id="@+id/dd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:padding="4dp"
+                android:text="Beauty and personal care"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+
+
+
+        </LinearLayout>
+
+
+    </GridLayout>
+</RelativeLayout>
